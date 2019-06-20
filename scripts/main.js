@@ -11,32 +11,49 @@ window.onload = function(){
   const notificationSound = document.getElementById("notificationSound")
 
   var color = "gray";
+  var enableSphere = 0;
+
+  box1.onmouseenter = function(){
+    enableSphere = 0;
+  }
 
   sphere1.onmouseenter = function(){
-    color = "orange";
-    boxScreen.setAttribute("src","#BDAMimg");
-    box1.setAttribute("color",color);
-    notificationSound.play("#notificationSound");
+    if(enableSphere == 0){
+      enableSphere = 1;
+      color = "orange";
+      boxScreen.setAttribute("src","#BDAMimg");
+      box1.setAttribute("color",color);
+      notificationSound.play("#notificationSound");
+    }
   }
 
   sphere2.onmouseenter = function(){
-    color = "green";
-    boxScreen.setAttribute("src","#IATimg");
-    box1.setAttribute("color",color);
-    notificationSound.play("#notificationSound");
+    if(enableSphere == 0 || 1){
+      enableSphere = 2;
+      color = "green";
+      boxScreen.setAttribute("src","#IATimg");
+      box1.setAttribute("color",color);
+      notificationSound.play("#notificationSound");
+    }
   }
 
   sphere3.onmouseenter = function(){
-    color = "purple";
-    boxScreen.setAttribute("src","#FICTimg");
-    box1.setAttribute("color",color);
-    notificationSound.play("#notificationSound");
+    if(enableSphere == 0){
+      enableSphere = 1;
+      color = "purple";
+      boxScreen.setAttribute("src","#FICTimg");
+      box1.setAttribute("color",color);
+      notificationSound.play("#notificationSound");
+    }
   }
 
   sphere4.onmouseenter = function(){
-    color = "cyan";
-    boxScreen.setAttribute("src","#SEimg");
-    box1.setAttribute("color",color);
-    notificationSound.play("#notificationSound");
+    if(enableSphere == 0 || 1){
+      enableSphere = 2;
+      color = "cyan";
+      boxScreen.setAttribute("src","#SEimg");
+      box1.setAttribute("color",color);
+      notificationSound.play("#notificationSound");
+    }
   }
 }
