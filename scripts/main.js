@@ -11,49 +11,32 @@ window.onload = function(){
   const notificationSound = document.getElementById("notificationSound")
 
   var color = "gray";
-  var enableSphere = 0;
 
-  box1.onmouseenter = function(){
-    enableSphere = 0;
-  }
-
-  sphere1.onmouseenter = function(){
-    if(enableSphere == 0){
-      enableSphere = 1;
+  sphere1.onclick = function(){
       color = "orange";
       boxScreen.setAttribute("src","#BDAMimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
-    }
   }
 
-  sphere2.onmouseenter = function(){
-    if(enableSphere == 0 || 1){
-      enableSphere = 2;
+  sphere2.onclick = function(){
       color = "green";
       boxScreen.setAttribute("src","#IATimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
-    }
   }
 
-  sphere3.onmouseenter = function(){
-    if(enableSphere == 0){
-      enableSphere = 1;
+  sphere3.onclick = function(){
       color = "purple";
       boxScreen.setAttribute("src","#FICTimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
-    }
   }
 
-  sphere4.onmouseenter = function(){
-    if(enableSphere == 0 || 1){
-      enableSphere = 2;
+  sphere4.onclick = function(){
       color = "cyan";
       boxScreen.setAttribute("src","#SEimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
-    }
   }
 }
