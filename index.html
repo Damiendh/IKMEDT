@@ -15,6 +15,8 @@
         <img id="IATtitle" src="images/IATtitle.png">
         <img id="FICTtitle" src="images/FICTtitle.png">
         <img id="SEtitle" src="images/SEtitle.png">
+        <img id="groundTexture" src="images/grass.jpg">
+        <img id="skyTexture" src="images/sky.png">
         <audio id="notificationSound" src="sounds/notification.mp3" preload="auto">
         <a-asset-item id="grassModel" src="models/grass_low_poly.glb"></a-asset-item>
       </a-assets>
@@ -26,6 +28,10 @@
           animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
           animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"></a-cursor>
       </a-camera>
+
+      <!-- Enviroment met lucht en ondergrond -->
+      <a-sky id="sky" src="#skyTexture"></a-sky>
+      <a-plane id="ground" src="#groundTexture" rotation="-90 0 0" width="90" height="90" repeat="10 10"></a-plane>
 
       <!-- Main scherm waar de camera default naar kijkt -->
       <a-box id="box1" color="gray" position="0 1.5 -1.5" height="1.5" sound="src: #notificationSound"></a-box>
