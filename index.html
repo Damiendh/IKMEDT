@@ -16,6 +16,7 @@
         <img id="FICTtitle" src="images/FICTtitle.png">
         <img id="SEtitle" src="images/SEtitle.png">
         <audio id="notificationSound" src="sounds/notification.mp3" preload="auto">
+        <a-asset-item id="grassModel" src="models/grass_low_poly.glb"></a-asset-item>
       </a-assets>
 
       <!--Camera inclusief cursor en cursor animatie -->
@@ -27,7 +28,7 @@
       </a-camera>
 
       <!-- Main scherm waar de camera default naar kijkt -->
-      <a-box id="box1" color="gray" position="0 1.75 -1.5" sound="src: #notificationSound"></a-box>
+      <a-box id="box1" color="gray" position="0 1.5 -1.5" height="1.5" sound="src: #notificationSound"></a-box>
 
       <a-image id="boxScreen" width="0.8" height="0.8" position="0 1.75 -0.99"></a-image>
 
@@ -41,6 +42,15 @@
       <a-image id="IATtitleIMG" rotation="0 170 0" src="#IATtitle" width="0.6" height="0.4" position="-0.8 1.5 1.95"></a-image>
       <a-image id="FICTtitleIMG" rotation="0 230 0" src="#FICTtitle" width="0.6" height="0.4" position="1.85 1.5 1.65"></a-image>
       <a-image id="SEtitleIMG" rotation="0 200 0" src="#SEtitle" width="0.6" height="0.4" position="0.8 1.5 1.95"></a-image>
+
+      <!--  Grass models -->
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="2 0 -1.95"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="4 0 3"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="-2.5 0 1.5"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="3 0 -0.5"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="-4 0 -2.5"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="-1 0 5"></a-entity>
+      <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="0.8 0 -4"></a-entity>
 
     </a-scene>
   </body>
