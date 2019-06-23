@@ -2,6 +2,7 @@ window.onload = function(){
   const box1 = document.getElementById("box1");
 
   const boxScreen = document.getElementById("boxScreen");
+  const start = document.getElementById("start");
 
   const sphere1 = document.getElementById("sphere1");
   const sphere2 = document.getElementById("sphere2");
@@ -17,6 +18,7 @@ window.onload = function(){
       boxScreen.setAttribute("src","#BDAMimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
+      start.setAttribute("visible",false);
   }
 
   sphere2.onclick = function(){
@@ -24,6 +26,7 @@ window.onload = function(){
       boxScreen.setAttribute("src","#IATimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
+      start.setAttribute("visible",false);
   }
 
   sphere3.onclick = function(){
@@ -31,6 +34,7 @@ window.onload = function(){
       boxScreen.setAttribute("src","#FICTimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
+      start.setAttribute("visible",false);
   }
 
   sphere4.onclick = function(){
@@ -38,5 +42,6 @@ window.onload = function(){
       boxScreen.setAttribute("src","#SEimg");
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
+      start.setAttribute("visible",false);
   }
 }
