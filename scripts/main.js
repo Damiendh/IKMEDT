@@ -66,6 +66,7 @@ window.onload = function(){
       specialization = 4;
       boxScreen.setAttribute("src","#SEimg");
       boxScreen.setAttribute("class","clickable");
+      box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
   }
