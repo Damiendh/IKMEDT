@@ -36,6 +36,7 @@ window.onload = function(){
       specialization = 1;
       boxScreen.setAttribute("src","#BDAMimg");
       boxScreen.setAttribute("class","clickable");
+      boxScreen.setAttribute("visible", true);
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
@@ -46,6 +47,7 @@ window.onload = function(){
       specialization = 2;
       boxScreen.setAttribute("src","#IATimg");
       boxScreen.setAttribute("class","clickable");
+      boxScreen.setAttribute("visible", true);
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
@@ -56,6 +58,7 @@ window.onload = function(){
       specialization = 3;
       boxScreen.setAttribute("src","#FICTimg");
       boxScreen.setAttribute("class","clickable");
+      boxScreen.setAttribute("visible", true);
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
@@ -66,6 +69,7 @@ window.onload = function(){
       specialization = 4;
       boxScreen.setAttribute("src","#SEimg");
       boxScreen.setAttribute("class","clickable");
+      boxScreen.setAttribute("visible", true);
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
