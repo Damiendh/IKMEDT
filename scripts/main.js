@@ -26,6 +26,8 @@ window.onload = function(){
   const sphere3 = document.getElementById("sphere3");
   const sphere4 = document.getElementById("sphere4");
 
+  const terugknop = document.getElementById("terugknop");
+
   const notificationSound = document.getElementById("notificationSound")
 
   var color = "gray";
@@ -76,19 +78,26 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
-      sphereReset()
+      sphereReset();
+  }
+
+  terugknop.onclick = function(){
+    boxScreen.setAttribute("class","clickable");
+    boxScreen.setAttribute("visible", true);
+    sphereReset();
   }
 
   boxScreen.onclick = function(){
       boxScreen.setAttribute("visible", false);
       boxScreen.setAttribute("class","");
+      terugknop.setAttribute("visible", true);
+      terugknop.setAttribute("class","clickable");
       switch(specialization){
         case 1:
           BDAMsmall1.setAttribute("visible", true);
           BDAMsmall2.setAttribute("visible", true);
           BDAMsmall3.setAttribute("visible", true);
           BDAMsmall4.setAttribute("visible", true);
-          BDAMsmall1.setAttribute("class","clickable");
           BDAMsmall2.setAttribute("class","clickable");
           BDAMsmall3.setAttribute("class","clickable");
           BDAMsmall4.setAttribute("class","clickable");
@@ -98,7 +107,6 @@ window.onload = function(){
           IATsmall2.setAttribute("visible", true);
           IATsmall3.setAttribute("visible", true);
           IATsmall4.setAttribute("visible", true);
-          IATsmall1.setAttribute("class","clickable");
           IATsmall2.setAttribute("class","clickable");
           IATsmall3.setAttribute("class","clickable");
           IATsmall4.setAttribute("class","clickable");
@@ -108,7 +116,6 @@ window.onload = function(){
           FICTsmall2.setAttribute("visible", true);
           FICTsmall3.setAttribute("visible", true);
           FICTsmall4.setAttribute("visible", true);
-          FICTsmall1.setAttribute("class","clickable");
           FICTsmall2.setAttribute("class","clickable");
           FICTsmall3.setAttribute("class","clickable");
           FICTsmall4.setAttribute("class","clickable");
@@ -118,9 +125,7 @@ window.onload = function(){
           SEsmall2.setAttribute("visible", true);
           SEsmall3.setAttribute("visible", true);
           SEsmall4.setAttribute("visible", true);
-          SEsmall1.setAttribute("class","clickable");
           SEsmall2.setAttribute("class","clickable");
-          SEsmall3.setAttribute("class","clickable");
           SEsmall4.setAttribute("class","clickable");
       }
   }
@@ -130,7 +135,6 @@ window.onload = function(){
     BDAMsmall2.setAttribute("visible", false);
     BDAMsmall3.setAttribute("visible", false);
     BDAMsmall4.setAttribute("visible", false);
-    BDAMsmall1.setAttribute("class","");
     BDAMsmall2.setAttribute("class","");
     BDAMsmall3.setAttribute("class","");
     BDAMsmall4.setAttribute("class","");
@@ -138,7 +142,6 @@ window.onload = function(){
     IATsmall2.setAttribute("visible", false);
     IATsmall3.setAttribute("visible", false);
     IATsmall4.setAttribute("visible", false);
-    IATsmall1.setAttribute("class","");
     IATsmall2.setAttribute("class","");
     IATsmall3.setAttribute("class","");
     IATsmall4.setAttribute("class","");
@@ -146,7 +149,6 @@ window.onload = function(){
     FICTsmall2.setAttribute("visible", false);
     FICTsmall3.setAttribute("visible", false);
     FICTsmall4.setAttribute("visible", false);
-    FICTsmall1.setAttribute("class","");
     FICTsmall2.setAttribute("class","");
     FICTsmall3.setAttribute("class","");
     FICTsmall4.setAttribute("class","");
@@ -154,9 +156,7 @@ window.onload = function(){
     SEsmall2.setAttribute("visible", false);
     SEsmall3.setAttribute("visible", false);
     SEsmall4.setAttribute("visible", false);
-    SEsmall1.setAttribute("class","");
     SEsmall2.setAttribute("class","");
-    SEsmall3.setAttribute("class","");
     SEsmall4.setAttribute("class","");
   }
 }
