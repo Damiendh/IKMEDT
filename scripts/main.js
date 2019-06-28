@@ -4,6 +4,8 @@ window.onload = function(){
   const boxScreen = document.getElementById("boxScreen");
   const start = document.getElementById("start");
 
+  const info = document.getElementById("info");
+
   const BDAMsmall1 = document.getElementById("BDAMsmall1");
   const BDAMsmall2 = document.getElementById("BDAMsmall2");
   const BDAMsmall3 = document.getElementById("BDAMsmall3");
@@ -32,6 +34,7 @@ window.onload = function(){
 
   var color = "gray";
   var specialization = 0;
+  var terug = 0;
 
   sphere1.onclick = function(){
       color = "orange";
@@ -42,6 +45,9 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      info.setAttribute("visible", false);
+      terugknop.setAttribute("visible", false);
+      terugknop.setAttribute("class","");
       sphereReset()
   }
 
@@ -54,6 +60,9 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      info.setAttribute("visible", false);
+      terugknop.setAttribute("visible", false);
+      terugknop.setAttribute("class","");
       sphereReset()
   }
 
@@ -66,6 +75,9 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      info.setAttribute("visible", false);
+      terugknop.setAttribute("visible", false);
+      terugknop.setAttribute("class","");
       sphereReset()
   }
 
@@ -78,56 +90,124 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      info.setAttribute("visible", false);
+      terugknop.setAttribute("visible", false);
+      terugknop.setAttribute("class","");
       sphereReset();
   }
 
   terugknop.onclick = function(){
-    boxScreen.setAttribute("class","clickable");
-    boxScreen.setAttribute("visible", true);
-    sphereReset();
+    if(terug == 1){
+      boxScreen.setAttribute("class","clickable");
+      boxScreen.setAttribute("visible", true);
+      terugknop.setAttribute("visible", false);
+      terugknop.setAttribute("class","");
+      sphereReset();
+    }
+    if(terug == 2){
+      boxScreen.onclick();
+      info.setAttribute("visible", false);
+    }
+  }
+
+  BDAMsmall2.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  BDAMsmall3.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  BDAMsmall4.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  IATsmall2.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  IATsmall3.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  IATsmall4.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  FICTsmall2.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  FICTsmall3.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  FICTsmall4.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  SEsmall2.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
+  }
+  SEsmall4.onclick = function(){
+    terug = 2;
+    info.setAttribute("visible", true);
+    sphereReset()
   }
 
   boxScreen.onclick = function(){
-      boxScreen.setAttribute("visible", false);
-      boxScreen.setAttribute("class","");
-      terugknop.setAttribute("visible", true);
-      terugknop.setAttribute("class","clickable");
-      switch(specialization){
-        case 1:
-          BDAMsmall1.setAttribute("visible", true);
-          BDAMsmall2.setAttribute("visible", true);
-          BDAMsmall3.setAttribute("visible", true);
-          BDAMsmall4.setAttribute("visible", true);
-          BDAMsmall2.setAttribute("class","clickable");
-          BDAMsmall3.setAttribute("class","clickable");
-          BDAMsmall4.setAttribute("class","clickable");
-          break;
-        case 2:
-          IATsmall1.setAttribute("visible", true);
-          IATsmall2.setAttribute("visible", true);
-          IATsmall3.setAttribute("visible", true);
-          IATsmall4.setAttribute("visible", true);
-          IATsmall2.setAttribute("class","clickable");
-          IATsmall3.setAttribute("class","clickable");
-          IATsmall4.setAttribute("class","clickable");
-          break;
-        case 3:
-          FICTsmall1.setAttribute("visible", true);
-          FICTsmall2.setAttribute("visible", true);
-          FICTsmall3.setAttribute("visible", true);
-          FICTsmall4.setAttribute("visible", true);
-          FICTsmall2.setAttribute("class","clickable");
-          FICTsmall3.setAttribute("class","clickable");
-          FICTsmall4.setAttribute("class","clickable");
-          break;
-        case 4:
-          SEsmall1.setAttribute("visible", true);
-          SEsmall2.setAttribute("visible", true);
-          SEsmall3.setAttribute("visible", true);
-          SEsmall4.setAttribute("visible", true);
-          SEsmall2.setAttribute("class","clickable");
-          SEsmall4.setAttribute("class","clickable");
-      }
+    terug = 1;
+    boxScreen.setAttribute("visible", false);
+    boxScreen.setAttribute("class","");
+    terugknop.setAttribute("visible", true);
+    terugknop.setAttribute("class","clickable");
+    switch(specialization){
+      case 1:
+        BDAMsmall1.setAttribute("visible", true);
+        BDAMsmall2.setAttribute("visible", true);
+        BDAMsmall3.setAttribute("visible", true);
+        BDAMsmall4.setAttribute("visible", true);
+        BDAMsmall2.setAttribute("class","clickable");
+        BDAMsmall3.setAttribute("class","clickable");
+        BDAMsmall4.setAttribute("class","clickable");
+        break;
+      case 2:
+        IATsmall1.setAttribute("visible", true);
+        IATsmall2.setAttribute("visible", true);
+        IATsmall3.setAttribute("visible", true);
+        IATsmall4.setAttribute("visible", true);
+        IATsmall2.setAttribute("class","clickable");
+        IATsmall3.setAttribute("class","clickable");
+        IATsmall4.setAttribute("class","clickable");
+        break;
+      case 3:
+        FICTsmall1.setAttribute("visible", true);
+        FICTsmall2.setAttribute("visible", true);
+        FICTsmall3.setAttribute("visible", true);
+        FICTsmall4.setAttribute("visible", true);
+        FICTsmall2.setAttribute("class","clickable");
+        FICTsmall3.setAttribute("class","clickable");
+        FICTsmall4.setAttribute("class","clickable");
+        break;
+      case 4:
+        SEsmall1.setAttribute("visible", true);
+        SEsmall2.setAttribute("visible", true);
+        SEsmall3.setAttribute("visible", true);
+        SEsmall4.setAttribute("visible", true);
+        SEsmall2.setAttribute("class","clickable");
+        SEsmall4.setAttribute("class","clickable");
+    }
   }
 
   function sphereReset(){
