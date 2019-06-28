@@ -88,24 +88,40 @@ window.onload = function(){
           BDAMsmall2.setAttribute("visible", true);
           BDAMsmall3.setAttribute("visible", true);
           BDAMsmall4.setAttribute("visible", true);
+          BDAMsmall1.setAttribute("class","clickable");
+          BDAMsmall2.setAttribute("class","clickable");
+          BDAMsmall3.setAttribute("class","clickable");
+          BDAMsmall4.setAttribute("class","clickable");
           break;
         case 2:
           IATsmall1.setAttribute("visible", true);
           IATsmall2.setAttribute("visible", true);
           IATsmall3.setAttribute("visible", true);
           IATsmall4.setAttribute("visible", true);
+          IATsmall1.setAttribute("class","clickable");
+          IATsmall2.setAttribute("class","clickable");
+          IATsmall3.setAttribute("class","clickable");
+          IATsmall4.setAttribute("class","clickable");
           break;
         case 3:
           FICTsmall1.setAttribute("visible", true);
           FICTsmall2.setAttribute("visible", true);
           FICTsmall3.setAttribute("visible", true);
           FICTsmall4.setAttribute("visible", true);
+          FICTsmall1.setAttribute("class","clickable");
+          FICTsmall2.setAttribute("class","clickable");
+          FICTsmall3.setAttribute("class","clickable");
+          FICTsmall4.setAttribute("class","clickable");
           break;
         case 4:
           SEsmall1.setAttribute("visible", true);
           SEsmall2.setAttribute("visible", true);
           SEsmall3.setAttribute("visible", true);
           SEsmall4.setAttribute("visible", true);
+          SEsmall1.setAttribute("class","clickable");
+          SEsmall2.setAttribute("class","clickable");
+          SEsmall3.setAttribute("class","clickable");
+          SEsmall4.setAttribute("class","clickable");
       }
   }
 
@@ -114,17 +130,33 @@ window.onload = function(){
     BDAMsmall2.setAttribute("visible", false);
     BDAMsmall3.setAttribute("visible", false);
     BDAMsmall4.setAttribute("visible", false);
+    BDAMsmall1.setAttribute("class","");
+    BDAMsmall2.setAttribute("class","");
+    BDAMsmall3.setAttribute("class","");
+    BDAMsmall4.setAttribute("class","");
     IATsmall1.setAttribute("visible", false);
     IATsmall2.setAttribute("visible", false);
     IATsmall3.setAttribute("visible", false);
     IATsmall4.setAttribute("visible", false);
+    IATsmall1.setAttribute("class","");
+    IATsmall2.setAttribute("class","");
+    IATsmall3.setAttribute("class","");
+    IATsmall4.setAttribute("class","");
     FICTsmall1.setAttribute("visible", false);
     FICTsmall2.setAttribute("visible", false);
     FICTsmall3.setAttribute("visible", false);
     FICTsmall4.setAttribute("visible", false);
+    FICTsmall1.setAttribute("class","");
+    FICTsmall2.setAttribute("class","");
+    FICTsmall3.setAttribute("class","");
+    FICTsmall4.setAttribute("class","");
     SEsmall1.setAttribute("visible", false);
     SEsmall2.setAttribute("visible", false);
     SEsmall3.setAttribute("visible", false);
     SEsmall4.setAttribute("visible", false);
+    SEsmall1.setAttribute("class","");
+    SEsmall2.setAttribute("class","");
+    SEsmall3.setAttribute("class","");
+    SEsmall4.setAttribute("class","");
   }
 }
