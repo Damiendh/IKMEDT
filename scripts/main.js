@@ -38,7 +38,7 @@ window.onload = function(){
   var terug = 0;
 
   sphere1.onclick = function(){
-      color = "orange";
+      color = "#FF9800";
       specialization = 1;
       boxScreen.setAttribute("src","#BDAMimg");
       boxScreen.setAttribute("class","clickable");
@@ -54,7 +54,7 @@ window.onload = function(){
   }
 
   sphere2.onclick = function(){
-      color = "green";
+      color = "#4CAF50";
       specialization = 2;
       boxScreen.setAttribute("src","#IATimg");
       boxScreen.setAttribute("class","clickable");
@@ -70,7 +70,7 @@ window.onload = function(){
   }
 
   sphere3.onclick = function(){
-      color = "purple";
+      color = "#9C27B0";
       specialization = 3;
       boxScreen.setAttribute("src","#FICTimg");
       boxScreen.setAttribute("class","clickable");
@@ -86,7 +86,7 @@ window.onload = function(){
   }
 
   sphere4.onclick = function(){
-      color = "cyan";
+      color = "#2196F3";
       specialization = 4;
       boxScreen.setAttribute("src","#SEimg");
       boxScreen.setAttribute("class","clickable");
