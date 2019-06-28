@@ -29,6 +29,7 @@ window.onload = function(){
   const sphere4 = document.getElementById("sphere4");
 
   const terugknop = document.getElementById("terugknop");
+  const terugIMG = document.getElementById("terugIMG");
 
   const notificationSound = document.getElementById("notificationSound")
 
@@ -47,6 +48,7 @@ window.onload = function(){
       start.setAttribute("visible",false);
       info.setAttribute("visible", false);
       terugknop.setAttribute("visible", false);
+      terugIMG.setAttribute("visible", false);
       terugknop.setAttribute("class","");
       sphereReset()
   }
@@ -62,6 +64,7 @@ window.onload = function(){
       start.setAttribute("visible",false);
       info.setAttribute("visible", false);
       terugknop.setAttribute("visible", false);
+      terugIMG.setAttribute("visible", false);
       terugknop.setAttribute("class","");
       sphereReset()
   }
@@ -77,6 +80,7 @@ window.onload = function(){
       start.setAttribute("visible",false);
       info.setAttribute("visible", false);
       terugknop.setAttribute("visible", false);
+      terugIMG.setAttribute("visible", false);
       terugknop.setAttribute("class","");
       sphereReset()
   }
@@ -92,6 +96,7 @@ window.onload = function(){
       start.setAttribute("visible",false);
       info.setAttribute("visible", false);
       terugknop.setAttribute("visible", false);
+      terugIMG.setAttribute("visible", false);
       terugknop.setAttribute("class","");
       sphereReset();
   }
@@ -101,6 +106,7 @@ window.onload = function(){
       boxScreen.setAttribute("class","clickable");
       boxScreen.setAttribute("visible", true);
       terugknop.setAttribute("visible", false);
+      terugIMG.setAttribute("visible", false);
       terugknop.setAttribute("class","");
       sphereReset();
     }
@@ -171,6 +177,7 @@ window.onload = function(){
     boxScreen.setAttribute("visible", false);
     boxScreen.setAttribute("class","");
     terugknop.setAttribute("visible", true);
+    terugIMG.setAttribute("visible", true);
     terugknop.setAttribute("class","clickable");
     switch(specialization){
       case 1:

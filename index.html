@@ -29,6 +29,7 @@
         <img id="file" src="images/file.png">
         <img id="software" src="images/software.png">
         <img id="filetree" src="images/filetree.png">
+        <img id="terugimage" src="images/terug.png">
         <audio id="notificationSound" src="sounds/notification.mp3" preload="auto">
         <a-asset-item id="grassModel" src="models/grass_low_poly.glb"></a-asset-item>
       </a-assets>
@@ -66,6 +67,7 @@
 
       <!-- Terugknop -->
       <a-sphere id="terugknop" radius="0.05" color="red" position="-0.35 1.25 -1.02" visible=false></a-sphere>
+      <a-image id="terugIMG" src="#terugimage" width="0.3" height="0.15" position="-0.14 1.26 -0.98" visible=false></a-image>
 
       <!--  Grass models -->
       <a-entity gltf-model="#grassModel" scale="0.05 0.05 0.05" position="2 0 -1.95"></a-entity>
