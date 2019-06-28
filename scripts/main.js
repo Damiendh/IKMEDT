@@ -119,56 +119,67 @@ window.onload = function(){
   BDAMsmall2.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#machinelearningINFO");
     sphereReset()
   }
   BDAMsmall3.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#databaseINFO");
     sphereReset()
   }
   BDAMsmall4.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#dashboardINFO");
     sphereReset()
   }
   IATsmall2.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#vrINFO");
     sphereReset()
   }
   IATsmall3.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#appINFO");
     sphereReset()
   }
   IATsmall4.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#sensorINFO");
     sphereReset()
   }
   FICTsmall2.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#fileINFO");
     sphereReset()
   }
   FICTsmall3.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#fingerprintINFO");
     sphereReset()
   }
   FICTsmall4.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#linuxINFO");
     sphereReset()
   }
   SEsmall2.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#filetreeINFO");
     sphereReset()
   }
   SEsmall4.onclick = function(){
     terug = 2;
     info.setAttribute("visible", true);
+    info.setAttribute("src", "#softwareINFO");
     sphereReset()
   }
 
