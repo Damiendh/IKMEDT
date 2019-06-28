@@ -81,6 +81,7 @@ window.onload = function(){
 
   boxScreen.onclick = function(){
       boxScreen.setAttribute("visible", false);
+      boxScreen.setAttribute("class","");
       switch(specialization){
         case 1:
           BDAMsmall1.setAttribute("visible", true);
