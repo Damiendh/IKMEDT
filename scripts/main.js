@@ -40,6 +40,7 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      sphereReset()
   }
 
   sphere2.onclick = function(){
@@ -51,6 +52,7 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      sphereReset()
   }
 
   sphere3.onclick = function(){
@@ -62,6 +64,7 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      sphereReset()
   }
 
   sphere4.onclick = function(){
@@ -73,6 +76,7 @@ window.onload = function(){
       box1.setAttribute("color",color);
       notificationSound.play("#notificationSound");
       start.setAttribute("visible",false);
+      sphereReset()
   }
 
   boxScreen.onclick = function(){
@@ -102,5 +106,24 @@ window.onload = function(){
           SEsmall3.setAttribute("visible", true);
           SEsmall4.setAttribute("visible", true);
       }
+  }
+
+  function sphereReset(){
+    BDAMsmall1.setAttribute("visible", false);
+    BDAMsmall2.setAttribute("visible", false);
+    BDAMsmall3.setAttribute("visible", false);
+    BDAMsmall4.setAttribute("visible", false);
+    IATsmall1.setAttribute("visible", false);
+    IATsmall2.setAttribute("visible", false);
+    IATsmall3.setAttribute("visible", false);
+    IATsmall4.setAttribute("visible", false);
+    FICTsmall1.setAttribute("visible", false);
+    FICTsmall2.setAttribute("visible", false);
+    FICTsmall3.setAttribute("visible", false);
+    FICTsmall4.setAttribute("visible", false);
+    SEsmall1.setAttribute("visible", false);
+    SEsmall2.setAttribute("visible", false);
+    SEsmall3.setAttribute("visible", false);
+    SEsmall4.setAttribute("visible", false);
   }
 }
